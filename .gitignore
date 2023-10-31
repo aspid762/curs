@@ -1,0 +1,15 @@
+venv
+id_rsa
+.vscode
+installer/node*
+installer/Python*
+installer/openssl*
+installer/sqlite*
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.pyc
