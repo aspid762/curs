@@ -16,10 +16,26 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import RedirectView
 
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path("", views.index),      # base.html
-    path("index", views.dash), # base.html
+    #path("", include('django.contrib.auth.urls')),      # auth
+    path("", RedirectView.as_view(url='news', permanent=True)),      # default page
+    path("login", views.login, name="login"),           # auth
+    #path("base", views.index),                          # base.html
+    path("index", views.dash),                          # index.html template
+    path("content", views.dash),                        # index.html template
+    path("about", views.about,name="about"),            # index.html about
+    path("contacts", views.contacts,name="contacts"),   # index.html contacts
+    path("news", views.news,name="news"),               # index.html contacts
 ]
+
+if settings.DEBUG:
+        urlpatterns += static(settings.MEDIA_URL,
+                              document_root=settings.MEDIA_ROOT)
+
+
