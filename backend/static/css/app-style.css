@@ -3665,8 +3665,10 @@ width: 300px;
 }
 
 th, td{
-width: 7.7% /* relative: 100%:13 columns= 7.6923076923 per column */
+width: 20% /* relative: 100%:13 columns= 7.6923076923 per column */
 width: 50px /* fixed */
+white-space: normal !important; 
+word-wrap: break-word;
 }
 
 
