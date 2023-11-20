@@ -26,17 +26,14 @@ urlpatterns = [
     #path("", include('django.contrib.auth.urls')),      # auth
     path("", RedirectView.as_view(url='news', permanent=True)),      # default page
     
-    #path("base", views.index),                          # base.html
-    path("index", views.dash),                          # index.html template
-    path("content", views.dash),                        # index.html template
-    path("about", views.about,name="about"),            # index.html about
-    path("contacts", views.contacts,name="contacts"),   # index.html contacts
-    path("news", views.news,name="news"),               # index.html contacts
+    path("about",       views.about,        name="about"),            # index.html about
+    path("contacts",    views.contacts,     name="contacts"),   # index.html contacts
+    path("news",        views.index,        name="news"),               # index.html contacts
 
-    path("login",       views.login_news,    name="login"),           # auth    
-    path("register",    views.register, name="register"),       # index.html contacts
-    path("reset",       views.reset,    name="reset"),             # index.html contacts
-    path("profile",     views.profile,  name="profile"),
+    path("login",       views.login_news,   name="login"),           # auth    
+    path("register",    views.register,     name="register"),       # index.html contacts
+    path("reset",       views.reset,        name="reset"),             # index.html contacts
+    path("profile",     views.profile,      name="profile"),
 ]
 
 if settings.DEBUG:

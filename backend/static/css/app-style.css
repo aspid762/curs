@@ -720,10 +720,7 @@ body.bg-theme15 {
     color: #fff;
 	 font-size: 16px;
 }
-.product-img {
-    height: 32px;
-}
- 
+
 .skill-img{
   height: 35px;
  }
@@ -3630,32 +3627,46 @@ table.grid td {
 	width: 100%;
  }
   
-  .dropdown-lg{
-  	display: none;
-  }
+.dropdown-lg{
+display: none;
+}
 
-  .nav-item.language{
-	display: none;
-  }
+.nav-item.language{
+display: none;
+}
 
-  .right-nav-link a.nav-link{
-    padding-right: .0rem !important;
-  }
+.right-nav-link a.nav-link{
+padding-right: .0rem !important;
+}
 
-  .topbar-nav .navbar {
-    padding: 0px 10px 0 5px;
-  }
+.topbar-nav .navbar {
+padding: 0px 10px 0 5px;
+}
 
-  .cd-timeline__block {
-    display: flex;
+.cd-timeline__block {
+display: flex;
   
-    @include breakpoint(md) {
-      &:nth-child(even) {
-        flex-direction: row-reverse; // for even blocks -> lay out content from right to left
-      }
+@include breakpoint(md) {
+    &:nth-child(even) {
+    flex-direction: row-reverse; // for even blocks -> lay out content from right to left
     }
+}
   }
 
+}
+
+.product-img {
+height: 200px;
+width: 300px;
+}
+ 
+.news_index {
+
+}
+
+th, td{
+width: 7.7% /* relative: 100%:13 columns= 7.6923076923 per column */
+width: 50px /* fixed */
 }
 
 

@@ -159,4 +159,8 @@ NOTEBOOK_ARGUMENTS = [
     # '--NotebookApp.default_url', notebook_default_url,
 ]
 print(type(NOTEBOOK_ARGUMENTS))
-#' '.join(
+
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+FIXTURE_DIRS = (
+   os.path.join(PROJECT_DIR, 'fixtures'),
+)

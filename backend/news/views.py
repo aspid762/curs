@@ -4,12 +4,7 @@ from django.contrib.auth import authenticate, login
 #from . import 
 
 def index(request):
-    return render(request,'base.html')
-def dash(request):
     return render(request,'index.html')
-def content(request):
-    return render(request,'content.html')
-
 def about(request):
     return render(request,'about.html')
 def contacts(request):
@@ -38,6 +33,6 @@ def news(request):
 def register(request):
     return render(request,'register.html')
 def reset(request):
-    return render(request,'reset.html')
+    return render(request,'reset-password.html')
 def profile(request):
     return render(request,'profile.html')
