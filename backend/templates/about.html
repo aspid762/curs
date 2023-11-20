@@ -1,12 +1,120 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<div class="clearfix"></div>
-	
+{% comment %} <div class="clearfix"></div> {% endcomment %}
   <div class="content-wrapper">
     <div class="container-fluid">
         <h1>О проекте</h1>
     </div>
+    <section class="cd-timeline js-cd-timeline container-fluid bg-theme bg-theme2">
+      <div class="container max-width-lg cd-timeline__container bg-theme bg-theme2">
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <img src="{% static '/timeline/img/cd-icon-picture.svg' %}" alt="Picture">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component text-white">
+            <h2 class="text-white">Channel created</h2>
+            <p class="color-contrast-higher text-md text-white">Channel &laquo;Информационный канал &quot;Python для продвинутых специалистов&quot;&raquo; created</p>
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">3 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--movie">
+            <img src="{% static '/timeline/img/cd-icon-movie.svg' %}" alt="Movie">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2 class="text-white">Всем привет!</h2>
+            <p class="color-contrast-higher text-md text-white">Всем привет! Сегодня расскажем про хакатоны</p>
+            
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">6 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+  
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <img src="{% static '/timeline/img/cd-icon-picture.svg' %}" alt="Picture">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2 class="text-white">Информационный канал &quot;Python для продвинутых специалистов&quot;</h2>
+            <p class="color-contrast-higher text-md text-white">Уважаемые слушатели!<br><br>Информируем вас, что в связи с заменой преподавателя на программе, старт первого занятия переносится <strong>на 31 октября</strong>.<br><br>Расписание и время занятий не меняется. Занятия будут проходить <strong>по вторникам и пятницам в 9.00 МСК</strong> на платформе Вебинар.ру. Постоянная ссылка на занятия прикреплена в рабочем календаре, на платформе МФТИ и будет дублироваться в информационный канал за час до старта занятий.<br><br>Также мы продлеваем регистрацию<a href="https://edu.mipt.ru/member/meroprijatija/python-dlya-prodvinutyh-specialistov-potok-2-pao-rostelekom/"> на платформе МФТИ</a> до 31 октября. Убедитесь, что вы заполнили анкету и приложили сканы документов.<br><br>В случае возникновения вопросов, обращайтесь к кураторам программы - к <a href="https://t.me/karina_baychorova">Карине </a>по вопросам, связанным с платформой МФТИ и <a href="https://t.me/konoplevaalina">Алине </a>по вопросам, связанным с Ростелеком.<br><br>Благодарим за понимание!<br><br>С уважением, команда обучения МФТИ и Школы программирования</p>
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">9 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+  
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <img src="{% static '/timeline/img/cd-icon-picture.svg' %}" alt="Picture">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2 class="text-white">Информационный канал &quot;Python для продвинутых специалистов&quot;</h2>
+            <p class="color-contrast-higher text-md text-white">Уважаемые слушатели!<br><br>Хотим вам напомнить, что завтра <strong>31 октября в 9:00 МСК</strong> состоится первое занятие на программе &quot;Python для продвинутых специалистов&quot;.<br><br><a href="https://events.webinar.ru/13613093/1897421955">Ссылка для подключения<br></a><br>Приглашение на занятие направили вам на почту и в календарь. Также ссылку для подключения продублируем в информационный канал за 10 минут до начала.<br><br>Ниже вы найдете обновленную памятку о программе.<br><br>Желаем всем успехов в обучении! 🚀</p>
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">30 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <img src="{% static '/timeline/img/cd-icon-picture.svg' %}" alt="Picture">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2 class="text-white">Информационный канал &quot;Python для продвинутых специалистов&quot;</h2>
+            <p class="color-contrast-higher text-md text-white">Всем доброе утро!       <br>Занятие №1 начинается через 10 минут — <a href="https://events.webinar.ru/13613093/1897421955">ссылка для подключения.</a></p>
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">31 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+        
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <img src="{% static '/timeline/img/cd-icon-picture.svg' %}" alt="Picture">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2 class="text-white">Информационный канал &quot;Python для продвинутых специалистов&quot;</h2>
+            <p class="color-contrast-higher text-md text-white">Уважаемые слушатели!<br><br>Информируем вас, что в связи с заменой преподавателя на программе, старт первого занятия переносится <strong>на 31 октября</strong>.<br><br>Расписание и время занятий не меняется. Занятия будут проходить <strong>по вторникам и пятницам в 9.00 МСК</strong> на платформе Вебинар.ру. Постоянная ссылка на занятия прикреплена в рабочем календаре, на платформе МФТИ и будет дублироваться в информационный канал за час до старта занятий.<br><br>Также мы продлеваем регистрацию<a href="https://edu.mipt.ru/member/meroprijatija/python-dlya-prodvinutyh-specialistov-potok-2-pao-rostelekom/"> на платформе МФТИ</a> до 31 октября. Убедитесь, что вы заполнили анкету и приложили сканы документов.<br><br>В случае возникновения вопросов, обращайтесь к кураторам программы - к <a href="https://t.me/karina_baychorova">Карине </a>по вопросам, связанным с платформой МФТИ и <a href="https://t.me/konoplevaalina">Алине </a>по вопросам, связанным с Ростелеком.<br><br>Благодарим за понимание!<br><br>С уважением, команда обучения МФТИ и Школы программирования</p>
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">9 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <img src="{% static '/timeline/img/cd-icon-picture.svg' %}" alt="Picture">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2 class="text-white">Информационный канал &quot;Python для продвинутых специалистов&quot;</h2>
+            <p class="color-contrast-higher text-md text-white">Уважаемые слушатели!<br><br>Информируем вас, что в связи с заменой преподавателя на программе, старт первого занятия переносится <strong>на 31 октября</strong>.<br><br>Расписание и время занятий не меняется. Занятия будут проходить <strong>по вторникам и пятницам в 9.00 МСК</strong> на платформе Вебинар.ру. Постоянная ссылка на занятия прикреплена в рабочем календаре, на платформе МФТИ и будет дублироваться в информационный канал за час до старта занятий.<br><br>Также мы продлеваем регистрацию<a href="https://edu.mipt.ru/member/meroprijatija/python-dlya-prodvinutyh-specialistov-potok-2-pao-rostelekom/"> на платформе МФТИ</a> до 31 октября. Убедитесь, что вы заполнили анкету и приложили сканы документов.<br><br>В случае возникновения вопросов, обращайтесь к кураторам программы - к <a href="https://t.me/karina_baychorova">Карине </a>по вопросам, связанным с платформой МФТИ и <a href="https://t.me/konoplevaalina">Алине </a>по вопросам, связанным с Ростелеком.<br><br>Благодарим за понимание!<br><br>С уважением, команда обучения МФТИ и Школы программирования</p>
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date text-white">9 October 2023</span>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->        
+
+      </div>
+    </section> <!-- cd-timeline -->
+    <script src="{% static '/timeline/js/main.js' %}"></script>
   </div>
-</div>        
+{% comment %} </div>         {% endcomment %}
 {% endblock %}

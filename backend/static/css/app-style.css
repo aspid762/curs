@@ -3646,6 +3646,15 @@ table.grid td {
     padding: 0px 10px 0 5px;
   }
 
+  .cd-timeline__block {
+    display: flex;
+  
+    @include breakpoint(md) {
+      &:nth-child(even) {
+        flex-direction: row-reverse; // for even blocks -> lay out content from right to left
+      }
+    }
+  }
 
 }
 
