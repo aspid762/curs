@@ -138,3 +138,25 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATICFILES_DIRS = [BASE_DIR / 'static',]
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# NOTEBOOK_ARGUMENTS = [
+#     '--ip', '0.0.0.0',
+#     '--port', '8888',
+# ]
+IPYTHON_KERNEL_DISPLAY_NAME = 'Django Kernel'
+
+try:
+    import jupyterlab
+    notebook_default_url = '/lab'  # Using JupyterLab
+except ImportError:
+    notebook_default_url = '/tree'  # Using Jupyter
+
+PATH_TO_NOTEBOOK_DIR = [BASE_DIR / 'Jupyter',]
+NOTEBOOK_ARGUMENTS = [
+    '--ip', '0.0.0.0',
+    '--port', '8888',
+    '--notebook-dir', str(BASE_DIR) + '/Jupyter',
+    # '--NotebookApp.default_url', notebook_default_url,
+]
+print(type(NOTEBOOK_ARGUMENTS))
+#' '.join(
